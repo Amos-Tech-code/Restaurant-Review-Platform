@@ -1,10 +1,23 @@
 # 🍽️ Restaurant Review Platform
 
-A Spring Boot 3 application that allows users to discover restaurants, write reviews, and upload photos.
-Built with a clean, layered architecture to demonstrate best practices in backend development.
+A **Spring Boot 3** application that allows users to discover restaurants, write reviews, and upload photos.  
+Built with a clean, layered architecture to demonstrate **best practices in backend development**.
 
-### 🏗️ Project Structure
+---
 
+## 🚀 Features
+- 🔐 Secure API endpoints with **Spring Security**
+- 🗄️ Data persistence using **Spring Data Elasticsearch**
+- 📝 Domain-driven design with **DTOs & Entities**
+- ⚡ Mapper layer with **MapStruct**
+- 📷 Photo upload & storage (filesystem-based implementation)
+- ✅ Comprehensive exception handling for robust APIs
+
+---
+
+## 🏗️ Project Structure
+
+```bash
 restaurant/
 ├── src/
 │   └── main/
@@ -20,10 +33,7 @@ restaurant/
 │       │   │
 │       │   ├── domain/                # Core domain layer
 │       │   │   ├── dtos/              # Data Transfer Objects
-│       │   │   │   └── RestaurantDto.java
 │       │   │   └── entities/          # Elasticsearch entities
-│       │   │       ├── Restaurant.java
-│       │   │       └── Review.java
 │       │   │
 │       │   ├── exceptions/            # Custom exceptions
 │       │   │   ├── BaseException.java
